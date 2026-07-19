@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pytest*)",
+      "Bash(python experiments/*)",
+      "Read(*)",
+      "Edit(tests/*)",
+      "Edit(experiments/*)",
+      "Edit(notes/*)"
+    ],
+    "deny": [
+      "Edit(tensorspine/engine.py)",
+      "Edit(tensorspine/nn.py)"
+    ]
+  }
+}

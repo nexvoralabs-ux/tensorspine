@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install (with dev extras)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check .
+
+      # continue-on-error is DELIBERATE. This repo ships with failing tests by
+      # design — the engine is implemented by hand, one gradient rule at a time,
+      # and a red badge for the first week is the honest state of a learning
+      # project. REMOVE this line once every stub in engine.py and nn.py is done;
+      # after that, a failing suite should fail CI for real.
+      - name: Test
+        continue-on-error: true
+        run: pytest

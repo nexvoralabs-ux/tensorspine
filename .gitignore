@@ -1,0 +1,38 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test / lint / coverage caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Generated plot outputs
+experiments/*.png
+experiments/output/
+experiments/out/
+
+# Graphviz artifacts
+*.gv
+*.gv.pdf
+*.gv.png
+
+# NOT ignored (committed on purpose — the tutor config is the interesting part
+# of this repo to a reader): notes/, CLAUDE.md, .claude/
