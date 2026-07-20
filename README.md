@@ -93,7 +93,7 @@ further and mechanically write-blocks `tensorspine/engine.py` and
 tool even on request. The friction is the point — see `notes/shortcuts.md`, which
 logs any time the honest path was skipped.
 
-## Credit
+## Credit.
 
 In the lineage of Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd)
 as a pedagogical exercise, independently implemented.
