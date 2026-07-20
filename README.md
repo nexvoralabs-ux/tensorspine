@@ -28,7 +28,7 @@ principles, without looking them up.
 | Graphviz DAG visualizer (`viz.py`) | `Neuron` / `Layer` / `MLP` forward passes |
 | `parameters()`, `zero_grad()` | weight initialization |
 
-The stub inventory lives in `CLAUE.md`; `make stubs` lists what remains.
+The stub inventory lives in `CLAE.md`; `make stubs` lists what remains.
 
 ## Quickstart
 
