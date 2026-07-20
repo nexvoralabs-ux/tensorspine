@@ -3,7 +3,7 @@
 A scalar reverse-mode automatic differentiation engine, written from scratch to
 understand backpropagation.
 
-[![CI](https://github.com/advik/tensorspine/actions/workflows/test.yml/badge.svg)](https://github.com/advik/tensorspine/actions/workflows/test.yml)
+[![CI](https://github.com/nexvoralabs-ux/tensorspine/actions/workflows/test.yml/badge.svg)](https://github.com/nexvoralabs-ux/tensorspine/actions/workflows/test.yml)
 
 > **Status: in progress — implementing by hand, one gradient rule at a time.**
 > Tests fail by design until the engine is complete.
@@ -28,7 +28,7 @@ principles, without looking them up.
 | Graphviz DAG visualizer (`viz.py`) | `Neuron` / `Layer` / `MLP` forward passes |
 | `parameters()`, `zero_grad()` | weight initialization |
 
-The stub inventory lives in `CLAUDE.md`; `make stubs` lists what remains.
+The stub inventory lives in `CLAUE.md`; `make stubs` lists what remains.
 
 ## Quickstart
 
